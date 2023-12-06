@@ -1,0 +1,25 @@
+server:
+  port: 8020
+spring:
+  profiles:
+    active: dev
+    include: secret
+  servlet:
+    multipart:
+      max-file-size: 50MB
+      max-request-size: 50MB
+  datasource:
+    url: jdbc:mysql://localhost:3306/medium
+    username: root
+    password: Chlehdcjf123!
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+  logging:
+    level:
+      com.blog.medium: INFO
+      org.hibernate.SQL: INFO
+      org.hibernate.orm.jdbc.bind: INFO
+      org.hibernate.orm.jdbc.extract: INFO
+      org.springframework.transaction.interceptor: INFO
