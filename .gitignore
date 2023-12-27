@@ -35,3 +35,10 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Custom ###
+/src/main/generated
+medium_dev.mv.db
+medium_dev.trace.db
+medium_test.mv.db
+medium_test.trace.db

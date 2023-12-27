@@ -12,10 +12,14 @@ spring:
     url: jdbc:mysql://localhost:3306/medium
     username: root
     password: Chlehdcjf123!
-    driver-class-name: com.mysql.jdbc.Driver
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     hibernate:
       ddl-auto: create
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
   logging:
     level:
       com.blog.medium: INFO
@@ -23,3 +27,8 @@ spring:
       org.hibernate.orm.jdbc.bind: INFO
       org.hibernate.orm.jdbc.extract: INFO
       org.springframework.transaction.interceptor: INFO
+jwt:
+  header: Authorization
+  issuer: ddagae0805@gmail.com
+  secret_key: q1w2e3r4t5y6u7i8o9p0a1s2d3f4g5h6j7k8l9z1x2c3v4b5n6m7
+  expired_seconds: 3600
